@@ -1,9 +1,9 @@
 const express = require('express')
 const bcrypt = require('bcrypt');
 const mongoose = require('mongoose')
-const User = require('./mongodb_models/user_schema')
-const Visitor = require('./mongodb_models/visitor_schema')
-const Pass = require('./mongodb_models/visitor_pass_schema')
+//const User = require('./mongodb_models/user_schema')
+//const Visitor = require('./mongodb_models/visitor_schema')
+//const Pass = require('./mongodb_models/visitor_pass_schema')
 const jwt = require('jsonwebtoken')
 const app = express()
 const swaggerJsdoc = require('swagger-jsdoc');
@@ -56,7 +56,7 @@ const options = {
   app.use('/swagger', swaggerUi.serve, swaggerUi.setup(openapiSpecification));
 
 
- mongoose.connect('mongodb+srv://jng010422:7NVCOJQwL6do3rXn@cluster0.junlsj6.mongodb.net/WJ_VMS')
+ mongoose.connect('mongodb+srv://fatin:fatin8501@cluster0.v6mchhf.mongodb.net/vms')
  .then(()=>{
      console.log('connected to mongodb')
      app.listen(port,() => {
