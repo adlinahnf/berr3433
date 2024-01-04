@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy Node.js app to Azure Web App - fatinadlina
+name: Build and deploy Node.js app to Azure Web App - BENR3433-INFORMATION-SECURITY-assignment
 
 on:
   push:
@@ -56,7 +56,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'fatinadlina'
+          app-name: 'BENR3433-INFORMATION-SECURITY-assignment'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C26CA8698CF84C5F9A16B1DF7BBFCCD0 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_F7FF2215B61E4BA8880F4F85B4F963EE }}
